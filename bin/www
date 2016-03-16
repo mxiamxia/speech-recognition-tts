@@ -20,11 +20,11 @@ app.set('port', port);
 /**
  * Create HTTP server.
  */
-var options = {
-		key: fs.readFileSync('../private.key'),
-		cert: fs.readFileSync('../certificate.pem')
-};
-var server = https.createServer(options, app);
+//var options = {
+//		key: fs.readFileSync('../private.key'),
+//		cert: fs.readFileSync('../certificate.pem')
+//};
+var server = https.createServer(app);
 //var server = https.createServer(options, app);
 
 /**
